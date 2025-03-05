@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: 1.25em;
+}
+footer{
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: .6em;
+    gap: 12px;
+    padding: 20px;
+}
+footer h2{
+    font-size: 1em;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    gap: 2px 25px;
+}
+.header{
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.header a{
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.game-preview{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    width: 218px;
+    gap: 10px;
+    color: #000;
+}
+.game-preview::before{
+    background: no-repeat center center/cover;
+    width: 200px;
+    height: 160px;
+    background-size: contain;
+    background-color: #111;
+    display: block;
+}
+#log-game::before{
+    content: '';
+    background-image: url('imgs/log.png');
+}
+#log-game::after{
+    content: 'Jogo de Comparação de Logaritmos';
+    font-size: .8em;
+    color: #444;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    min-height: 100lvh;
+    align-items: flex-start;
+}
+.game-iframe{
+    width: 100%;
+    border: none;
+    height: 40vw;
+}
+.game-container{
+    width: 70vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding: 12px;
+}
+.other-games{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(28vw - 30px);
+}
+h1{
+    text-align: center;
+}
+.about-game{
+    padding: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (max-width: 800px){
+    main{
+        flex-direction: column;
+    }
+    .game-container{
+        width: 100%;
+    }
+    .game-iframe{
+        height: 60vw;
+    }
+    .other-games{
+        width: 100%;
+    }
+}

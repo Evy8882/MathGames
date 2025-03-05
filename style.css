@@ -76,6 +76,15 @@ a{
     font-size: .8em;
     color: #444;
 }
+#basic-game::before{
+    content: '';
+    background-image: url('imgs/BasicMath.png');
+}
+#basic-game::after{
+    content: 'Jogo de Operações Básicas em 1 min';
+    font-size: .8em;
+    color: #444;
+}
 main{
     display: flex;
     flex-wrap: wrap;

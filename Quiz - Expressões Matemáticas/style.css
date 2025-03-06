@@ -1,0 +1,100 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, rgb(230, 152, 244), rgb(185, 22, 255));
+    color: #333;
+}
+
+.game-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+h1 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+
+#timer, #score {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+#question {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+}
+
+
+input {
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid #d8a9ff;
+    outline: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+
+#start-btn {
+    background: #0fad00;
+    color: white;
+}
+
+#check-btn {
+    background: #ff9800;
+    color: white;
+}
+
+#reset-btn {
+    background: #0059ff;
+    color: white;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+

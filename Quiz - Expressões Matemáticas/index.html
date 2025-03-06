@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Expressões Matemáticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <h1> Quiz: Expressões Matemáticas</h1>
+
+        <label for="difficulty">Dificuldade:</label>
+        <select id="difficulty">
+            <option value="easy">Fácil</option>
+            <option value="medium">Médio</option>
+            <option value="hard">Difícil</option>
+        </select>
+
+        <p id="timer"> Tempo: --s</p>
+        <p id="score"> Pontuação: 0</p>
+        <p id="question">Clique em "Iniciar Jogo" para começar!</p>
+
+        <input type="text" id="answer" placeholder="Sua resposta" disabled>
+        <button id="start-btn"> Iniciar Jogo</button>
+        <button id="check-btn" disabled>Responder</button>
+        <button id="reset-btn" disabled> Reiniciar</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Tabuada Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div id="intro-screen">
+            <img id="kuromi-image" src="img/texto.webp" alt="Kuromi Multiplication Table Game">
+            <button id="startButton">Start Game</button>
+        </div>
+
+    
+    <div id="container">
+        <div id="score">
+            Score: <span id="scorevalue">0</span>
+        </div>
+        
+        <div id="correct">
+            Correto!
+        </div>
+        
+        <div id="wrong">
+            Tente novamente!
+        </div>
+        
+        <div id="question">
+
+        </div>
+        
+        <div id="instruction">
+            Clique na resposta correta
+        </div>
+        
+        <div id="choices">
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+        </div>
+        
+        <div id="startreset">
+            Start Game
+        </div>
+        
+        <div id="timeremaining">
+            Tempo restante: <span id="timeremainingvalue">60</span> sec
+        </div>
+        
+        <div id="gameOver">
+
+        </div>
+    </div>
+
+    
+<audio id="correct-sound" src="audio/Resposta correta Efeito sonoro.mp3"></audio>
+
+
+<audio id="wrong-sound" src="audio/Resposta errada Efeito sonoro.mp3"></audio>
+
+
+<audio id="gameover-sound" src="audio/Game Over Sound Effect.mp3"></audio>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -85,6 +85,15 @@ a{
     font-size: .8em;
     color: #444;
 }
+#quiz-exp::before{
+    content: '';
+    background-image: url('imgs/quizExp.png');
+}
+#quiz-exp::after{
+    content: 'Quiz de Expressões numéricas';
+    font-size: .8em;
+    color: #444;
+}
 main{
     display: flex;
     flex-wrap: wrap;

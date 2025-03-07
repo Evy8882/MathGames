@@ -1,5 +1,5 @@
 # MathGames
-> Atividade de EAMT da Etec de Peruíbe
+> Atividade de EAMT da Etec de Peruíbe na turma do 2DS
 
 ## 🔗 Acesso
 
@@ -23,3 +23,7 @@ MathGames é uma plataforma interativa projetada para tornar o aprendizado de ma
 * Rafael D'Angelo Gradilone Pontes
 * Maria Clara da Silva Jacinto
 * Matheus Serra Nascimento
+
+## 👩‍🏫 Orientadora
+
+* Elza Stauber

@@ -1,0 +1,202 @@
+#intro-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: #f0f0f0;
+    text-align: center;
+    background-image: url(img/wallpaper.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#kuromi-image {
+    width: 75%; 
+    margin-bottom: 20px;
+}
+
+#startButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: #434190;
+}
+
+
+#container {
+    display: none; 
+    height: 400px;
+    width: 550px;
+    background-color: #351a55;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #a202ff;
+    position: relative;
+    background-image: url(https://w7.pngwing.com/pngs/544/517/png-transparent-kuromi-character-comics-and-fantasy-hello-kitty-thumbnail.png);
+}
+
+
+html {
+    height: 100%;
+    background-image: url(img/wallpaper.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#intro-screen h1, #intro-screen #startButton {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    z-index: 1;
+}
+
+#container {
+    height: 400px;
+    width: 550px;
+    background-color: #351a55;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #a202ff;
+    position: relative;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3erLHvNiumTzokph2o3nTnt7Jl2UJmpO_JFPzveIVeAdzmSbkXTINu2O7d4DNJ1W8dc4&usqp=CAU);
+}
+
+
+#startreset {
+    width: 78px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+
+#score {
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 11px;
+    position: absolute;
+    right: 20px;
+    box-shadow: 0px 4px 0px #9da853;
+}
+
+#correct, #wrong {
+    position: absolute;
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#wrong {
+    background-color: #de401a;
+}
+
+#question {
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: #9DA0EA;
+    box-shadow: 0px 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+
+#instruction {
+    width: 450px;
+    height: 50px;
+    background-color: #B481D9;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px #8153a8;
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.box:hover {
+    background-color: #9C89F6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+}
+
+.box:active {
+    background-color: #9C89F6;
+    color: white;
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+
+#box4 {
+    margin-right: 0;
+}
+
+#timeremaining {
+    width: 152px;
+    padding: 10px;
+    position: absolute;
+    top: 395px;
+    left: 400px;
+    background-color: rgba(181, 235, 36, 0.8);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#gameOver {
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#310533, #7e389e);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+}

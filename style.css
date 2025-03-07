@@ -94,6 +94,15 @@ a{
     font-size: .8em;
     color: #444;
 }
+#mult-game::before{
+    content: '';
+    background-image: url('imgs/multiplication-game.png');
+}
+#mult-game::after{
+    content: 'Responda as multiplicações no do tempo';
+    font-size: .8em;
+    color: #444;
+}
 main{
     display: flex;
     flex-wrap: wrap;
